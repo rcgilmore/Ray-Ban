@@ -1,0 +1,23 @@
+<div class="hero">
+  <button type="button" name="button" class="hero__button site-button site-button--hero"></button>
+</div>
+
+----
+bem option 1
+<ul class="search__my-list">
+  <li class="search__my-list__item">
+  </li>
+</ul>
+
+bem option 2
+<ul class="search__my-list my-list">
+  <li class="my-list__item">
+  </li>
+</ul>
+
+better option, NOT bem
+<ul class="search__my-list">
+  <li class="search__my-list-item">
+  </li>
+</ul>
+-----

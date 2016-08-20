@@ -1,0 +1,182 @@
+html {
+  box-sizing: border-box; }
+
+*:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ea714f; }
+
+.header {
+  position: relative;
+  background-color: #f6f6f6;
+  box-shadow: 5px 5px 10px #2f4f4f;
+  padding: 1.5% 0;
+  width: 90%;
+  margin: 5% auto 0;
+  vertical-align: middle; }
+  .header__wrapper {
+    vertical-align: middle;
+    padding-left: 2.7%; }
+  .header__title {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    vertical-align: middle; }
+  .header__nav {
+    display: inline-block;
+    vertical-align: middle; }
+  .header-nav__item {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 30px;
+    font-weight: 300; }
+  .header__search {
+    display: inline-block;
+    position: absolute;
+    right: 40px; }
+  .header__search-icon, .header__divider, .header__search-input {
+    display: inline-block;
+    vertical-align: middle; }
+  .header__search-input {
+    position: relative;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    background-color: #f6f6f6; }
+
+.vertical-line {
+  border-right: 1px solid #b5b5b5;
+  height: 50px; }
+
+.search-divider {
+  margin: 0 8px; }
+
+.nav-divider {
+  margin: 0 0 0 35px; }
+
+.header-nav__item:hover {
+  font-weight: bold;
+  border-bottom: 3px solid #000;
+  padding-bottom: 10px; }
+
+.hero {
+  background: #ffffff url("images/hero-image.png") no-repeat right center;
+  background-size: cover;
+  height: 507px;
+  width: 90%;
+  margin: 5% auto 0;
+  position: relative; }
+  .hero__left-column {
+    position: relative;
+    width: 44%;
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 3%; }
+  .hero__title {
+    font-weight: bold;
+    font-size: 21px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 5%; }
+  .hero__description {
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 28px;
+    margin-bottom: 6% 0; }
+  .hero__button {
+    margin: 6% 0; }
+  .hero__logo {
+    position: absolute;
+    top: 40px;
+    right: 40px; }
+  .hero__slogan {
+    position: absolute;
+    bottom: 0;
+    right: 38px;
+    font: bold 48px 'Microsoft YaHei UI', Arial, sans-serif;
+    color: #fff;
+    letter-spacing: -2px; }
+
+.site-button, .site-button--product {
+  border: 1px solid #61ac6e;
+  color: #fff;
+  background: #71c77f;
+  background-image: -webkit-linear-gradient(top, #71c77f, #61ac6e);
+  background-image: -moz-linear-gradient(top, #71c77f, #61ac6e);
+  background-image: -ms-linear-gradient(top, #71c77f, #61ac6e);
+  background-image: -o-linear-gradient(top, #71c77f, #61ac6e);
+  background-image: linear-gradient(to bottom, #71c77f, #61ac6e);
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 152px;
+  height: 42px; }
+
+.product {
+  background: #fbfbfb;
+  width: 28%;
+  margin: 4% 5% 0;
+  display: inline-block; }
+  .product__image {
+    width: 100%; }
+  .product__information {
+    padding-left: 7%;
+    position: relative; }
+  .product__title {
+    font-weight: normal;
+    font-size: 21px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 4% 0 1%; }
+  .product__description {
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 3.5% 0; }
+  .product__size {
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .product__price {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 0 4%;
+    margin: 6% 0; }
+  .product__button {
+    position: absolute;
+    bottom: 20px;
+    right: 28px; }
+
+.size-span {
+  font-size: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #65a0b8; }
+
+.site-button--product {
+  border: 1px solid #7ab6ce;
+  background: #87ddff;
+  background-image: -webkit-linear-gradient(top, #87ddff, #74b3cc);
+  background-image: -moz-linear-gradient(top, #87ddff, #74b3cc);
+  background-image: -ms-linear-gradient(top, #87ddff, #74b3cc);
+  background-image: -o-linear-gradient(top, #87ddff, #74b3cc);
+  background-image: linear-gradient(to bottom, #87ddff, #74b3cc);
+  width: 112px;
+  height: 32px;
+  font-size: 10px;
+  padding: 0; }
+
+.graph {
+  width: 59%;
+  margin: 2% -2% 0;
+  display: inline-block; }
+  .graph__image {
+    width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */

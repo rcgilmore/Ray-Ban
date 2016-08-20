@@ -1,0 +1,69 @@
+//second block- hero content//
+@import "variables.scss";
+.hero {
+  background: #ffffff url("images/hero-image.png") no-repeat right center;
+  background-size: cover;
+  height: 507px;
+  width: 90%;
+  margin: 5% auto 0;
+  position: relative;
+
+  &__left-column {
+    position: relative;
+    width: 44%;
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 3%;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 21px;
+    font-family: $fontStack;
+    padding-top: 5%;
+  }
+
+  &__description {
+    font-size: 14px;
+    font-family: $fontStack;
+    line-height: 28px;
+    margin-bottom: 6% 0;
+  }
+
+  &__button {
+    margin:6% 0;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  &__slogan {
+    position: absolute;
+    bottom: 0;
+    right: 38px;
+    font: bold 48px 'Microsoft YaHei UI', Arial, sans-serif;
+    color: #fff;
+    letter-spacing: -2px;
+  }
+}
+
+  .site-button {
+    border: 1px solid #61ac6e;
+    color: #fff;
+    background: #71c77f;
+  background-image: -webkit-linear-gradient(top, #71c77f, #61ac6e);
+  background-image: -moz-linear-gradient(top, #71c77f, #61ac6e);
+  background-image: -ms-linear-gradient(top, #71c77f, #61ac6e);
+  background-image: -o-linear-gradient(top, #71c77f, #61ac6e);
+  background-image: linear-gradient(to bottom, #71c77f, #61ac6e);
+    font-weight:bold;
+    font-size: 14px;
+    font-family: $fontStack;
+    width:152px;
+    height: 42px;
+    // padding: 12px 18px;
+    // text-decoration: none;
+  }

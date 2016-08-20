@@ -1,0 +1,17 @@
+html{
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ea714f;
+}
+
+@import "./blocks/header.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/product.scss";
+@import "./blocks/graph.scss";

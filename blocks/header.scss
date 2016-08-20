@@ -1,0 +1,82 @@
+//first main block//
+@import "variables.scss";
+.header {
+  position: relative;
+  background-color: #f6f6f6;
+  box-shadow: 5px 5px 10px #2f4f4f;
+  padding: 1.5% 0;
+  width: 90%;
+  margin: 5% auto 0;
+  vertical-align: middle;
+
+  &__wrapper {
+    vertical-align: middle;
+    padding-left: 2.7%;
+    }
+
+
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $fontStack;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+  &__nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &-nav__item {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-family: $fontStack;
+    margin: 0 30px;
+    font-weight: 300;
+  }
+
+  &__search {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+  }
+
+  &__search-icon,
+  &__divider,
+  &__search-input {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__search-input {
+    position: relative;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: $fontStack;
+    font-weight: 300;
+    background-color: #f6f6f6;
+  }
+}
+
+.vertical-line {
+  border-right: 1px solid #b5b5b5;
+  height: 50px;
+}
+
+.search-divider {
+  margin: 0 8px;
+}
+
+.nav-divider {
+  margin: 0 0 0 35px;
+}
+
+.header-nav__item:hover {
+  font-weight: bold;
+  border-bottom: 3px solid #000;
+  padding-bottom:10px;
+}
