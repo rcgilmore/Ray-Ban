@@ -1,0 +1,104 @@
+@import "variables.scss";
+
+.shopping-bag{
+  width: 59%;
+  margin: 3% 5% 0;
+  display: inline-block;
+  background: #fdfdfd;
+  vertical-align: middle;
+  position: relative;
+
+  &__title {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: $fontStack;
+    margin: 3% 3.8% 2.5%;
+  }
+
+  &__product {
+    margin-left: 3.8%;
+    position: relative;
+  }
+
+  &__image {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $fontStack;
+    display: inline-block;
+    margin:0 auto;
+    vertical-align: middle;
+  }
+
+  &__remove {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: $fontStack;
+    text-decoration: none;
+    color: #65a0b8;
+    display: inline-block;
+    margin:0 auto;
+    vertical-align: text-bottom;
+    text-decoration: none;
+  }
+
+  &__quanity{
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+    padding: 7px 12px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 15.7%;
+    font-size: 14px;
+    font-family: $fontStack;
+  }
+
+  &__price {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: $fontStack;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 14.5%;
+    right: 3.76%;
+  }
+
+  &__divider {
+    margin: 2% auto;
+  }
+
+  &__total {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: $fontStack;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2.8% 3.8%;
+  }
+
+  &__button {
+    display: inline-block;
+    position: absolute;
+    bottom: 4.5%;
+    right: 3.76%;
+  }
+}
+
+.horizontal-line {
+  border-bottom: 1px solid #b5b5b5;
+  width: 700px;
+}
+
+.site-button--shopping-bag {
+  border: 1px solid #f19b13;
+  background: #f19b13;
+  text-decoration: none;
+  font-size: 10px;
+  padding: 10px 20px;
+}

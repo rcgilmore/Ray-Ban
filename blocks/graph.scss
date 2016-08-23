@@ -1,10 +1,52 @@
 @import "variables.scss";
 .graph {
   width: 59%;
-  margin: 2% -2% 0;
+  margin: 3% -2% 0;
   display: inline-block;
+  background: #f4f4f4;
+  vertical-align: top;
 
   &__image {
     width: 100%;
   }
+
+  &__wrapper {
+    width: 100%;
+    padding: 2%;
+  }
+
+  &__data {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 32%;
+    vertical-align: middle;
+  }
+
+  &__number {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: $fontStack;
+    margin:0;
+  }
+
+  &__divider {
+    margin-top: 1%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 300;;
+    font-family: $fontStack;
+    margin:0;
+    padding-top: 3%;
+  }
+}
+
+.vertical-line--graph {
+  height: 65px;
+  background: #444444;
 }

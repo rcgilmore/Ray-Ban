@@ -1,5 +1,6 @@
 //second block- hero content//
 @import "variables.scss";
+
 .hero {
   background: #ffffff url("images/hero-image.png") no-repeat right center;
   background-size: cover;
@@ -7,6 +8,8 @@
   width: 90%;
   margin: 5% auto 0;
   position: relative;
+  padding-bottom: 1.3%;
+
 
   &__left-column {
     position: relative;
@@ -14,6 +17,10 @@
     text-align: left;
     padding-left: 4%;
     padding-top: 3%;
+  }
+
+  &__layban {
+    padding-top: 2%;
   }
 
   &__title {
@@ -32,6 +39,10 @@
 
   &__button {
     margin:6% 0;
+    transition: background, .7s, ease-in-out;
+    -webkit-transition: background, .7s, ease-in-out;
+    -moz-transition: background, .7s, ease-in-out;
+    -o-transition: background, .7s, ease-in-out;
   }
 
   &__logo {
@@ -51,8 +62,13 @@
 }
 
   .site-button {
-    border: 1px solid #61ac6e;
+    font-family: $fontStack;
     color: #fff;
+
+  }
+
+  .site-button--hero {
+    border: 1px solid #61ac6e;
     background: #71c77f;
   background-image: -webkit-linear-gradient(top, #71c77f, #61ac6e);
   background-image: -moz-linear-gradient(top, #71c77f, #61ac6e);
@@ -61,9 +77,13 @@
   background-image: linear-gradient(to bottom, #71c77f, #61ac6e);
     font-weight:bold;
     font-size: 14px;
-    font-family: $fontStack;
     width:152px;
     height: 42px;
+    cursor: pointer;
     // padding: 12px 18px;
     // text-decoration: none;
+  }
+
+  .hero__button:hover {
+      background: #71c77f;
   }

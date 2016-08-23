@@ -73,13 +73,16 @@ body {
   height: 507px;
   width: 90%;
   margin: 5% auto 0;
-  position: relative; }
+  position: relative;
+  padding-bottom: 1.3%; }
   .hero__left-column {
     position: relative;
     width: 44%;
     text-align: left;
     padding-left: 4%;
     padding-top: 3%; }
+  .hero__layban {
+    padding-top: 2%; }
   .hero__title {
     font-weight: bold;
     font-size: 21px;
@@ -91,7 +94,11 @@ body {
     line-height: 28px;
     margin-bottom: 6% 0; }
   .hero__button {
-    margin: 6% 0; }
+    margin: 6% 0;
+    transition: background, .7s, ease-in-out;
+    -webkit-transition: background, .7s, ease-in-out;
+    -moz-transition: background, .7s, ease-in-out;
+    -o-transition: background, .7s, ease-in-out; }
   .hero__logo {
     position: absolute;
     top: 40px;
@@ -104,9 +111,12 @@ body {
     color: #fff;
     letter-spacing: -2px; }
 
-.site-button, .site-button--product {
+.site-button {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff; }
+
+.site-button--hero {
   border: 1px solid #61ac6e;
-  color: #fff;
   background: #71c77f;
   background-image: -webkit-linear-gradient(top, #71c77f, #61ac6e);
   background-image: -moz-linear-gradient(top, #71c77f, #61ac6e);
@@ -115,15 +125,19 @@ body {
   background-image: linear-gradient(to bottom, #71c77f, #61ac6e);
   font-weight: bold;
   font-size: 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 152px;
-  height: 42px; }
+  height: 42px;
+  cursor: pointer; }
+
+.hero__button:hover {
+  background: #71c77f; }
 
 .product {
-  background: #fbfbfb;
+  background: #f5f5f5;
   width: 28%;
-  margin: 4% 5% 0;
-  display: inline-block; }
+  margin: 3% 5% 0;
+  display: inline-block;
+  vertical-align: top; }
   .product__image {
     width: 100%; }
   .product__information {
@@ -142,22 +156,25 @@ body {
     font-weight: bold;
     font-size: 12px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .product__change-size {
+    font-size: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #65a0b8; }
   .product__price {
     font-weight: bold;
     font-size: 28px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0 0 4%;
-    margin: 6% 0; }
+    margin: 6% 0 1%; }
   .product__button {
     position: absolute;
     bottom: 20px;
-    right: 28px; }
-
-.size-span {
-  font-size: 10px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  color: #65a0b8; }
+    right: 28px;
+    -webkit-transition: background, .7s, ease-in-out;
+    -moz-transition: background, .7s, ease-in-out;
+    -o-transition: background, .7s, ease-in-out;
+    transition: background, .7s, ease-in-out; }
 
 .site-button--product {
   border: 1px solid #7ab6ce;
@@ -170,13 +187,145 @@ body {
   width: 112px;
   height: 32px;
   font-size: 10px;
-  padding: 0; }
+  padding: 0;
+  color: white; }
+
+.product__button:hover {
+  background: #87ddff; }
 
 .graph {
   width: 59%;
-  margin: 2% -2% 0;
-  display: inline-block; }
+  margin: 3% -2% 0;
+  display: inline-block;
+  background: #f4f4f4;
+  vertical-align: top; }
   .graph__image {
     width: 100%; }
+  .graph__wrapper {
+    width: 100%;
+    padding: 2%; }
+  .graph__data {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 32%;
+    vertical-align: middle; }
+  .graph__number {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0; }
+  .graph__divider {
+    margin-top: 1%;
+    vertical-align: middle;
+    display: inline-block; }
+  .graph__text {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding-top: 3%; }
+
+.vertical-line--graph {
+  height: 65px;
+  background: #444444; }
+
+.shopping-bag {
+  width: 59%;
+  margin: 3% 5% 0;
+  display: inline-block;
+  background: #fdfdfd;
+  vertical-align: middle;
+  position: relative; }
+  .shopping-bag__title {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 3% 3.8% 2.5%; }
+  .shopping-bag__product {
+    margin-left: 3.8%;
+    position: relative; }
+  .shopping-bag__image {
+    display: inline-block;
+    vertical-align: middle; }
+  .shopping-bag__description {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle; }
+  .shopping-bag__remove {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #65a0b8;
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: text-bottom;
+    text-decoration: none; }
+  .shopping-bag__quanity {
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+    padding: 7px 12px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 15.7%;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .shopping-bag__price {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 14.5%;
+    right: 3.76%; }
+  .shopping-bag__divider {
+    margin: 2% auto; }
+  .shopping-bag__total {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2.8% 3.8%; }
+  .shopping-bag__button {
+    display: inline-block;
+    position: absolute;
+    bottom: 4.5%;
+    right: 3.76%; }
+
+.horizontal-line {
+  border-bottom: 1px solid #b5b5b5;
+  width: 700px; }
+
+.site-button--shopping-bag {
+  border: 1px solid #f19b13;
+  background: #f19b13;
+  text-decoration: none;
+  font-size: 10px;
+  padding: 10px 20px; }
+
+.map {
+  background: #f5f5f5;
+  width: 28%;
+  margin: 3% -2% 0;
+  display: inline-block;
+  vertical-align: top; }
+  .map__title {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    margin: 2% 5%; }
+  .map__location {
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 2% 5% 2.6%; }
 
 /*# sourceMappingURL=styles.css.map */

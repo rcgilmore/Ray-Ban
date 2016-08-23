@@ -7,6 +7,7 @@
     <title>RayBan</title>
 
     <link rel="stylesheet" href="/styles.css">
+    
   </head>
 
   <body>
@@ -25,42 +26,95 @@
               <img class="header__search-icon" src="images/search_icon.png" alt="magnifying glass"/>
                 <div class="header__divider search-divider vertical-line"></div>
                   <input class="header__search-input" type="text" name="search" placeholder="Search...">
-            </div>
-          </div>
-      </header>
-
-      <div class="hero">
-        <div class="hero__left-column">
-          <img class="hero_layban" src="images/logo.png" alt="ray-ban"/>
-          <h2 class="hero__title">RB2132 901 NEW WAYFARER</h2>
-            <p class="hero__description">The Ray-Ban® Wayfarer® is simply the most recognizable style in sunglasses. The distinct shape is paired with the traditional Ray-Ban signature logo on the sculpted temples. After its intial design in 1952, the Ray-Ban Wayfarer quickly endeared itself to Hollywood filmmakers, celebrities, musicians and artists, solidifying its iconic status for years to come.
-            </p>
-             <button class="hero__button site-button" role="button">FIND OUT MORE</button>
-          </div>
-            <img class="hero__logo" src="images/logo_block.png" alt="red block ray-ban logo"/>
-              <h1 class="hero__slogan">NEVER HIDE</h1>
-      </div>
-      <div class="product">
-        <img class="product__image" src="images/product-image.png" alt="vans shoes" />
-          <div class="product__information">
-            <h1 class="product__title">VAN DOREN AUTHENTIC</h1>
-            <p class="product__description">
-              (Parrot/ Light Blue)
-            </p>
-              <p class="product__size">
-              Size: UK9 <span class="product__option"><a class="size-span" href="#">[Change]</a></span>
-              </p>
-                <p class="product__price">
-              &pound;54.00
-                </p>
-                <button type="submit" name="button" class="product__button site-button--product">ADD TO BASKET</button>
           </div>
       </div>
-      <div class="graph">
-        <img class="graph__image" src="images/line-graph.png" alt="line graph" />
-        
-
+    </header>
+    <div class="hero">
+      <div class="hero__left-column">
+        <img class="hero_layban" src="images/logo.png" alt="ray-ban"/>
+        <h2 class="hero__title">RB2132 901 NEW WAYFARER</h2>
+        <p class="hero__description">
+          The Ray-Ban® Wayfarer® is simply the most recognizable style in sunglasses. The distinct shape is paired with the traditional Ray-Ban signature logo on the sculpted temples. After its intial design in 1952, the Ray-Ban Wayfarer quickly endeared itself to Hollywood filmmakers, celebrities, musicians and artists, solidifying its iconic status for years to come.
+        </p>
+        <button class="hero__button site-button site-button--hero" type="submit" name="button">FIND OUT MORE</button>
       </div>
+      <img class="hero__logo" src="images/logo_block.png" alt="red block ray-ban logo"/>
+      <h1 class="hero__slogan">NEVER HIDE</h1>
+    </div>
+    <div class="product">
+      <img class="product__image" src="images/product-image.png" alt="vans shoes" />
+        <div class="product__information">
+          <h1 class="product__title">VAN DOREN AUTHENTIC</h1>
+          <p class="product__description">
+            (Parrot/ Light Blue)
+          </p>
+          <p class="product__size">
+            Size: UK9
+            <span class="product__option">
+            <a class="product__change-size" href="#">[Change]</a></span>
+          </p>
+          <p class="product__price">
+            &pound;54.00
+          </p>
+          <button type="submit" name="button" class="product__button site-button site-button--product">ADD TO BASKET</button>
+        </div>
+    </div>
+    <div class="graph">
+      <img class="graph__image" src="images/line-graph.png" alt="line graph" />
+      <div class="graph__wrapper">
+        <div class="graph__data">
+          <h1 class="graph__number">9,374</h1>
+          <p class="graph__text">Sales This Week</p>
+        </div>
+          <div class="graph__divider vertical-line vertical-line--graph"></div>
+        <div class="graph__data">
+          <h1 class="graph__number">125,457</h1>
+          <p class="graph__text">Total Sales
+          </p>
+        </div>
+          <div class="graph__divider vertical-line vertical-line--graph"></div>
+        <div class="graph__data">
+          <h1 class="graph__number">+ 17%</h1>
+          <p class="graph__text">Total Income
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="shopping-bag">
+      <h1 class="shopping-bag__title">Shopping Bag</h1>
+        <div class="shopping-bag__product">
+          <img class="shopping-bag__image" src="images/shoes.png" alt="low top vans" />
+          <h2 class="shopping-bag__description">Vans Vault 2012 Summer OG Era LX Pack</h2>
+          <a href="#" class="shopping-bag__remove">[Remove]</a>
+          <p class="shopping-bag__quanity">1</p>
+          <h1 class="shopping-bag__price">&pound;54.00</h1>
+        </div>
+          <div class="shopping-bag__divider horizontal-line"></div>
+        <div class="shopping-bag__product">
+          <img class="shopping-bag__image" src="images/emerica.png" alt="Emerica red t-shirt" />
+          <h2 class="shopping-bag__description">Emerica Pure 12 T Shirt Red</h2>
+          <a href="#" class="shopping-bag__remove">[Remove]</a>
+          <p class="shopping-bag__quanity">2</p>
+          <h1 class="shopping-bag__price">&pound;32.00</h1>
+        </div>
+          <div class="shopping-bag__divider horizontal-line"></div>
+        <div class="shopping-bag__product">
+          <img class="shopping-bag__image" src="images/button-up.png" alt="Fred Perry Checked Shirt" />
+          <h2 class="shopping-bag__description">Fred Perry Dark Yellow Checked Shirt</h2>
+          <a href="#" class="shopping-bag__remove">[Remove]</a>
+          <p class="shopping-bag__quanity">1</p>
+          <h1 class="shopping-bag__price">&pound;70.00</h1>
+        </div>
+          <h1 class="shopping-bag__total">Total: &pound;156.00</h1>
+          <a class="shopping-bag__button site-button site-button--shopping-bag" href="#">CHECKOUT</a>
+    </div>
+    <div class="map">
+      <div class="map__google-maps">
+        <a href="https://www.google.co.th/maps/place/Mollusk+Surf+Shop/@33.9878141,-118.4739906,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2bab8534ccb93:0xae7b129f8ef6b333!8m2!3d33.9878141!4d-118.4718019"><img src="images/map.png" alt="map of venice" class="map__image"/></a>
+      </div>
+        <h1 class="map__title">1600 Pacific Ave</h1>
+        <p class="map__location">Venice, CA, United States</p>
+    </div>
   </body>
 </html>
 

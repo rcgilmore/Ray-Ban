@@ -1,10 +1,11 @@
 @import 'variables.scss';
 
 .product {
-  background: #fbfbfb;
+  background: #f5f5f5;
   width: 28%;
-  margin: 4% 5% 0;
+  margin: 3% 5% 0;
   display: inline-block;
+  vertical-align: top;
 
   &__image {
     width: 100%;
@@ -34,34 +35,34 @@
     font-family: $fontStack;
   }
 
-  &__option {
-
+  &__change-size {
+    font-size: 10px;
+    font-family: $fontStack;
+    text-decoration: none;
+    color: #65a0b8;
   }
 
+  
   &__price {
     font-weight: bold;
     font-size: 28px;
     font-family: $fontStack;
     padding: 0 0 4%;
-    margin: 6% 0;
+    margin: 6% 0 1%;
   }
 
   &__button {
     position: absolute;
     bottom: 20px;
     right:28px;
+    -webkit-transition: background, .7s, ease-in-out;
+    -moz-transition: background, .7s, ease-in-out;
+    -o-transition: background, .7s, ease-in-out;
+    transition: background, .7s, ease-in-out;
   }
 }
 
-.size-span {
-  font-size: 10px;
-  font-family: $fontStack;
-  text-decoration: none;
-  color: #65a0b8;
-}
-
 .site-button--product {
-  @extend .site-button;
   border: 1px solid #7ab6ce;
   background: #87ddff;
    background-image: -webkit-linear-gradient(top, #87ddff, #74b3cc);
@@ -73,4 +74,9 @@
   height: 32px;
   font-size: 10px;
   padding:0;
+  color: white;
+}
+
+.product__button:hover {
+    background: #87ddff;
 }
