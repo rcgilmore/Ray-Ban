@@ -1,3 +1,4 @@
+//graph block start//
 @import "variables.scss";
 .graph {
   width: 59%;
@@ -5,6 +6,7 @@
   display: inline-block;
   background: #f4f4f4;
   vertical-align: top;
+  box-shadow: $shadow;
 
   &__image {
     width: 100%;
@@ -45,8 +47,4 @@
     padding-top: 3%;
   }
 }
-
-.vertical-line--graph {
-  height: 65px;
-  background: #444444;
-}
+//end of graph block//

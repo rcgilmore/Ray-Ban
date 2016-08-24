@@ -7,6 +7,7 @@
   background: #fdfdfd;
   vertical-align: middle;
   position: relative;
+  box-shadow: $shadow;
 
   &__title {
     font-size: 21px;
@@ -44,6 +45,9 @@
     margin:0 auto;
     vertical-align: text-bottom;
     text-decoration: none;
+    &:hover {
+      color: #196a8b;
+    }
   }
 
   &__quanity{
@@ -87,18 +91,14 @@
     position: absolute;
     bottom: 4.5%;
     right: 3.76%;
+    -webkit-transition: background, .7s, ease-in-out;
+    -moz-transition: background, .7s, ease-in-out;
+    -o-transition: background, .7s, ease-in-out;
+    transition: background, .7s, ease-in-out;
   }
 }
 
 .horizontal-line {
   border-bottom: 1px solid #b5b5b5;
-  width: 700px;
-}
-
-.site-button--shopping-bag {
-  border: 1px solid #f19b13;
-  background: #f19b13;
-  text-decoration: none;
-  font-size: 10px;
-  padding: 10px 20px;
+  width: 93%;
 }

@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+.footer {
+  position: relative;
+  background-color: #f9f9f9;
+  box-shadow: $shadow;
+  width: 88%;
+  margin: 3% auto 5%;
+  padding: 1%;
+
+  &__title {
+    display: inline-block;
+    font-size:12px;
+    font-weight: bold;
+    font-family: $fontStack;
+  }
+
+  &__divider {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3%;
+  }
+}

@@ -1,0 +1,42 @@
+.social-media{
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 16px;
+
+  &__link{
+    display: inline-block;;
+    width: 21px;
+    height: 21px;
+    background-repeat: no-repeat;
+    padding: 0 5px;
+    background-image: url('../images/spritesheet.png');
+
+    &--twitter{
+      background-position: 0px 0px;
+      &:hover{
+        background-position: 0px -26px;
+      }
+    }
+
+    &--facebook{
+      background-position: 0px -52px;
+      &:hover{
+        background-position: 0px -78px;
+      }
+    }
+
+    &--vimeo{
+      background-position: 0px -104px;
+      &:hover{
+        background-position: 0px -130px;
+    }
+  }
+    &--pinterest{
+      background-position: 0px -156px;
+      &:hover{
+        background-position: 0px -182px;
+    }
+  }
+}
+}

@@ -6,15 +6,17 @@
 
     <title>RayBan</title>
 
-    <link rel="stylesheet" href="/styles.css">
-    
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/1fcf24dca1.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(33.9878141,-118.4718019),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(33.9878141,-118.4718019)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>1600 pacifica ave, venice beach california<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
   </head>
 
   <body>
     <header class="header">
       <div class="header__wrapper">
         <h1 class="header__title">Ecommerce Elements</h1>
-          <div class="header__divider nav-divider vertical-line"></div>
+          <div class="header__divider nav-divider vertical-line vertical-line--header"></div>
             <nav class="header__nav header-nav">
               <a href="#" class="header-nav__item">HOME</a>
               <a href="#" class="header-nav__item">BRANDS</a>
@@ -23,8 +25,9 @@
               <a href="#" class="header-nav__item">CONTACT</a>
             </nav>
             <div class="header__search">
-              <img class="header__search-icon" src="images/search_icon.png" alt="magnifying glass"/>
-                <div class="header__divider search-divider vertical-line"></div>
+              <i class="header__search-icon fa fa-search" aria-hidden="true"></i>
+              <!-- <img class="header__search-icon" src="images/search_icon.png" alt="magnifying glass"/> -->
+                <div class="header__divider search-divider vertical-line vertical-line--header"></div>
                   <input class="header__search-input" type="text" name="search" placeholder="Search...">
           </div>
       </div>
@@ -36,7 +39,7 @@
         <p class="hero__description">
           The Ray-Ban® Wayfarer® is simply the most recognizable style in sunglasses. The distinct shape is paired with the traditional Ray-Ban signature logo on the sculpted temples. After its intial design in 1952, the Ray-Ban Wayfarer quickly endeared itself to Hollywood filmmakers, celebrities, musicians and artists, solidifying its iconic status for years to come.
         </p>
-        <button class="hero__button site-button site-button--hero" type="submit" name="button">FIND OUT MORE</button>
+        <a href="#" class="hero__button site-button site-button--hero">FIND OUT MORE</a>
       </div>
       <img class="hero__logo" src="images/logo_block.png" alt="red block ray-ban logo"/>
       <h1 class="hero__slogan">NEVER HIDE</h1>
@@ -56,7 +59,7 @@
           <p class="product__price">
             &pound;54.00
           </p>
-          <button type="submit" name="button" class="product__button site-button site-button--product">ADD TO BASKET</button>
+          <a href="#" class="product__button site-button site-button--product">ADD TO BASKET</a>
         </div>
     </div>
     <div class="graph">
@@ -106,21 +109,23 @@
           <h1 class="shopping-bag__price">&pound;70.00</h1>
         </div>
           <h1 class="shopping-bag__total">Total: &pound;156.00</h1>
-          <a class="shopping-bag__button site-button site-button--shopping-bag" href="#">CHECKOUT</a>
+          <a href="#" class="shopping-bag__button site-button site-button--shopping-bag" >CHECKOUT</a>
     </div>
     <div class="map">
-      <div class="map__google-maps">
-        <a href="https://www.google.co.th/maps/place/Mollusk+Surf+Shop/@33.9878141,-118.4739906,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2bab8534ccb93:0xae7b129f8ef6b333!8m2!3d33.9878141!4d-118.4718019"><img src="images/map.png" alt="map of venice" class="map__image"/></a>
+      <div class="map__google-map" style='overflow:hidden;height:auto;'><div id='gmap_canvas' style='height:328px;'></div>
       </div>
         <h1 class="map__title">1600 Pacific Ave</h1>
         <p class="map__location">Venice, CA, United States</p>
     </div>
+    <div class="footer">
+      <h1 class="footer__title">Ecommerce Elements</h1>
+      <div class="footer__divider vertical-line vertical-line--footer"></div>
+      <div class="social-media">
+        <a class="social-media__link social-media__link--twitter"href="#"></a>
+        <a class="social-media__link social-media__link--facebook"href="#"></a>
+        <a class="social-media__link social-media__link--vimeo"href="#"></a>
+        <a class="social-media__link social-media__link--pinterest"href="#"></a>
+      </div>
+    </div>
   </body>
 </html>
-
-<!--header/nav debate
-search icon-font/background/img
-header__search_icon
-header__search_input
-search input snytax
-vertical divide lines...reusable or block based  -->

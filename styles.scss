@@ -11,9 +11,13 @@ body {
   background-color: #ea714f;
 }
 
-@import "./blocks/header.scss";
-@import "./blocks/hero.scss";
-@import "./blocks/product.scss";
-@import "./blocks/graph.scss";
-@import "./blocks/shopping-bag.scss";
-@import "./blocks/map.scss";
+@import "blocks/header.scss";
+@import "blocks/vertical-line.scss";
+@import "blocks/hero.scss";
+@import "blocks/product.scss";
+@import "blocks/graph.scss";
+@import "blocks/shopping-bag.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/social-media.scss";
+@import "blocks/site-button.scss";

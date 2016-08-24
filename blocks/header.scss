@@ -1,10 +1,10 @@
-//first main block//
+//first block begins//
 @import "variables.scss";
 .header {
   position: relative;
   background-color: #f6f6f6;
-  box-shadow: 5px 5px 10px #2f4f4f;
-  padding: 1.5% 0;
+  box-shadow: $shadow;
+  padding: 1% 0;
   width: 90%;
   margin: 5% auto 0;
   vertical-align: middle;
@@ -59,12 +59,11 @@
     font-family: $fontStack;
     font-weight: 300;
     background-color: #f6f6f6;
+    height: 30px;
+    &:focus {
+      outline: none;
+    }
   }
-}
-
-.vertical-line {
-  border-right: 1px solid #b5b5b5;
-  height: 50px;
 }
 
 .search-divider {
@@ -80,3 +79,4 @@
   border-bottom: 3px solid #000;
   padding-bottom:10px;
 }
+//end of first block//
