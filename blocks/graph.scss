@@ -48,3 +48,12 @@
   }
 }
 //end of graph block//
+
+
+//mobile friendly//
+@media screen and (max-width: 767px){
+  .graph{
+    display: none;
+  }
+}
+//end of modbile//

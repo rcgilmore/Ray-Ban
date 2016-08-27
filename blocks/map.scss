@@ -8,6 +8,9 @@
   display: inline-block;
   vertical-align: top;
 
+  &__canvas {
+    max-height: 370px;
+  }
   &__title {
     font-size: 21px;
     font-weight: bold;
@@ -21,3 +24,60 @@
     margin: 1% 5% 3.8%;
   }
 }
+
+@media screen and (min-width: 1440px){
+  .map__google-map{
+    padding-bottom: 2.7%;
+  }
+}
+
+//landscape tablet//
+@media screen and (max-width: 1075px){
+  .map{
+    width: 90%;
+    display: block;
+    text-align: center;
+    margin: 3% auto 0;
+  }
+  .map__title{
+    display: inline-block;
+    margin: 3% auto;
+  }
+  .map__location{
+    display: inline-block;
+    margin: 0 0 0 2%;
+  }
+}
+//end of landscape tablet//
+
+//portrait tablet//
+@media screen and (max-width: 1023px){
+.map{
+  width: 90%;
+  display: block;
+  text-align: center;
+  margin: 3% auto 0;
+  }
+  .map__title{
+    display: inline-block;
+    margin: 3% auto;
+  }
+  .map__location{
+    display: inline-block;
+    margin: 0 0 0 2%;
+  }
+}
+//end of portrait tablet//
+
+//mobile friendly//
+@media screen and (max-width: 767px){
+  .map {
+    width: 90%;
+    margin: 5% auto 0;
+    display: block;
+  }
+  .map__title, .map__location{
+    text-align: center;
+  }
+}
+//end of mobile//

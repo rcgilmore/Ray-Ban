@@ -46,7 +46,6 @@
     }
   }
 
-
   &__price {
     font-weight: bold;
     font-size: 28px;
@@ -65,3 +64,36 @@
     transition: background, .7s, ease-in-out;
   }
 }
+
+//landscape tablet//
+@media screen and (max-width: 1075px){
+  .product__price{
+    margin: 4% 0 1%;
+  }
+}
+//end of portrait tablet//
+
+//portrait tablet size//
+@media screen and (max-width: 1023px){
+  .product__title {
+    font-size: 16px;
+  }
+  .product__price{
+    font-size: 21px;
+    margin: 6% 0 3%;
+  }
+  .product__button {
+    right:5%;
+    bottom: 4%;
+  }
+}
+//end of portrait tablet//
+
+//mobile friendly//
+@media screen and (max-width: 767px){
+  .product {
+    margin: 6% 5% 0;
+    width: 90%;
+  }
+}
+//end of mobile//

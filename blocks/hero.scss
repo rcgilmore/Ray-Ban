@@ -61,3 +61,36 @@
     letter-spacing: -2px;
   }
 }
+
+//mobile friendly//
+@media screen and (max-width: 767px){
+  .hero__logo {
+    display: none;
+  }
+  .hero__left-column {
+    width:100%;
+    text-align: center;
+    padding: 1% 0;
+  }
+  .hero__layban {
+    margin:0 auto;
+    text-align: center;
+    width:50%;
+    padding: 5% 0 2%;
+  }
+  .hero__title {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 5% 0 5%;
+  }
+  .hero__description{
+    text-align: center;
+    width: 84%;
+    margin: 0 auto;
+  }
+  .hero__slogan {
+    display: none;
+  }
+}
+//end mobile//
