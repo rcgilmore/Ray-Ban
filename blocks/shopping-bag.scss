@@ -1,4 +1,6 @@
+//5th block - shopping-bag content//
 @import "variables.scss";
+//uses site-button.scss//
 
 .shopping-bag{
   width: 59%;
@@ -97,10 +99,12 @@
     transition: background, .7s, ease-in-out;
   }
 }
+
 .horizontal-line {
   border-bottom: 1px solid #b5b5b5;
   width: 93%;
 }
+
 //landscape tablet//
 @media screen and (max-width: 1075px){
   .shopping-bag {

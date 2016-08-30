@@ -1,4 +1,6 @@
+//3rd block-product content//
 @import 'variables.scss';
+//uses site-button.scss//
 
 .product {
   background: #f5f5f5;
@@ -71,7 +73,7 @@
     margin: 4% 0 1%;
   }
 }
-//end of portrait tablet//
+//end of landscape tablet//
 
 //portrait tablet size//
 @media screen and (max-width: 1023px){

@@ -1,5 +1,6 @@
-//first block begins//
+//header block begins//
 @import "variables.scss";
+
 .header {
   position: relative;
   background-color: #f6f6f6;
@@ -35,6 +36,11 @@
     margin: 0 30px;
     font-weight: 300;
   }
+    .header-nav__item:hover {
+      font-weight: bold;
+      border-bottom: 3px solid #000;
+      padding-bottom:10px;
+    }
 
   &__search {
     display: inline-block;
@@ -71,19 +77,14 @@
 .nav-divider {
   margin: 0 0 0 35px;
 }
+// end of header block//
 
-.header-nav__item:hover {
-  font-weight: bold;
-  border-bottom: 3px solid #000;
-  padding-bottom:10px;
-}
-//end of first block//
-
+//spacing adjustment on nav//
 @media screen and (max-width: 1155px){
   .header-nav__item {
     margin: 0px 20px;
   }
-
+}
 
 //landscape tablet//
 @media screen and (max-width: 1075px){
@@ -141,5 +142,4 @@
       display: none;
     }
   }
-}
 //end of mobile//
